@@ -12,7 +12,8 @@ public class CSVReader {
 			BufferedReader br = new BufferedReader(new FileReader(path));
 			while((line = br.readLine()) != null) {
 				String[] values = line.split(",");
-				data.add(values);				
+				data.add(values);
+				System.out.println("gfdsa");
 			}
 		}
 		catch (FileNotFoundException e) {
